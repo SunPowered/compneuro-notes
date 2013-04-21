@@ -92,9 +92,9 @@ Are there computational advantages?
 Efficient Coding Hypothesis: Suppose the goal is to represent images as faithfully and efficiently as
 possible using neurons with receptive fields, RF1, RF2, etc.
 
-$$I = \sum_{i}{RF_{i}r_{i}}
+$$I = \sum_{i}{RF_{i}r_{i}}$$
 
-The linear combination of $RF_i}$ the various receptive fields reconstruct the image I using natural
+The linear combination of $RF_{i}$ the various receptive fields reconstruct the image I using natural
 neural responses.  Also, we want there to be a minimum number of neurons that must be fired to reconstruct 
 the image.  To model this system, one can start with a random set of RF's and run an efficient coding
 algorithm on natural image patches.  Natural images are chosen because it is assumed that brains have been
