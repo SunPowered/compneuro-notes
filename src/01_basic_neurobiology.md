@@ -65,8 +65,44 @@ onto the center of the retina and off when the light is in the surrounding regio
 are cells which respond when light is on the surrounding area of the retina, and off when light is on the 
 center.  These are dubbed respectively, _On-Center/Off-Surround_, and _Off-Center/On-Surround_.  
 
-ecording Cells from *V1* shows various receptive fields.  The exepriment with the cat demonstrated oriented
-receptive field. If many cells are measured in the *V1*, one finds many different oriented receptive fields, 
+Recording cells from *V1* shows various receptive fields.  The experiment with the cat demonstrated oriented
+receptive fields. If many cells are measured in the *V1*, one finds many different oriented receptive fields, 
 which can be characterized using reverse correlation.
 
-Q: How are the oriented receptive fields obtained from the center receptive fields?
+
+### Mechanistic Model of Receptive Fields ###
+
+Q: How are the receptive fields constructed from the neural circuitry of the visual cortex?
+
+A:  Need to look at the neural circuitry of the optical system.
+
+The LGN primarily has center surround receptive fields, and the primary visual cortex 
+contains the oriented receptive fields.  Moreover, it has been found that one V1 cell is 
+connected to many LGN cells.  So how do many center surround receptive field cells 
+converge to one oriented receptive field?  Model suggested by Hubel & Wiesel claims that 
+the LGN cells are oriented such as to properly stimulate the oriented receptive field.
+There is contreversy with this simple model.  V1 cells are often connected to each other,
+providing inputs to other V1 cells.  This is an example of a mechanistic model.
+
+### Interpretive Model of Receptive Fields ###
+
+Q: Why are V1 cells shaped this way?  Why is there a preference for orientation and center/surround?
+Are there computational advantages?
+
+Efficient Coding Hypothesis: Suppose the goal is to represent images as faithfully and efficiently as
+possible using neurons with receptive fields, RF1, RF2, etc.
+
+$$I = \sum_{i}{RF_{i}r_{i}}
+
+The linear combination of $RF_i}$ the various receptive fields reconstruct the image I using natural
+neural responses.  Also, we want there to be a minimum number of neurons that must be fired to reconstruct 
+the image.  To model this system, one can start with a random set of RF's and run an efficient coding
+algorithm on natural image patches.  Natural images are chosen because it is assumed that brains have been
+optimized to recognize natural images.
+
+Some methods of efficient coding are *Sparse Coding*, *ICA*, *Predictive Coding*.  When random receptive fields 
+are optimized to natural images, the resulting set of fields are oriented and have both the + and - regions.  
+They are localized.  The conclusion is that the brain may be trying to find faithful representation of natural
+images by using oriented receptive fields.  
+
+
